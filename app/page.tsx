@@ -4,6 +4,7 @@ import Input from './component/Input';
 import WeatherDetails from './component/WeatherDetails';
 import WeekForecast from './component/WeatherForcast';
 import Current from './component/Current';
+// import {BiLogoInternetExplorer} from 'react-icons/bli'
 
 export default function Home() {
   const [data, setData] = useState({});
@@ -43,9 +44,10 @@ export default function Home() {
     );
   } else if (error !== '') {
     content = (
-      <div className="text-white text-center h-screen mt-[5rem]">
-        <h2 className="text-3xl font-semibold mb-4">City not found</h2>
-        <p className="text-xl">Please enter a valid city name</p>
+      <div className="text-white text-center h-screen mt-[5rem] ">
+        {/* <BiLogoInternetExplorer/> */}
+        <h2 className="text-3xl font-semibold mb-4">you have a bad network</h2>
+        <p className="text-xl">Kindly check your network connection</p>
       </div>
     );
   } else {
